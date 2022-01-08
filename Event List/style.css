@@ -1,0 +1,211 @@
+
+/* General Page Styling */
+
+    * {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+}
+
+p {
+    font-family: Arial;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: normal; 
+}
+
+.container {
+    display: grid;
+    position: relative; 
+    gap: 10px;
+    grid-template: repeat(10) / repeat(6);
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    width: 816px;
+    border-radius: 10px;
+    margin: 6.125rem 19.6rem;
+    padding: 2.5rem;
+
+}
+
+h1 {
+    font-size: 1.3125;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: normal;  
+    font-size: 0.9375rem;
+}
+
+h3 {
+    font-size: 0.9375rem;
+    color: #2C63AE;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* heading*/
+.groups {
+    font-size: 1.3125;
+    grid-area: 1 / 1 / 2 / 4;
+    line-height: 150%;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+}
+
+.name {
+    grid-area: 2 / 1 / 2 / 1;
+    color: #6D6D6D;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.lastAct {
+    grid-area: 2 / 2 / 2 / 2;
+    color: #6D6D6D;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+   
+}
+
+.member {
+    grid-area: 2 / 3 / 2 / 3;
+    font-size: 0.9375rem;
+    color: #6D6D6D;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+  
+}
+
+
+/* individual events*/
+
+.membershipBP {
+    grid-area: 3 / 1 / 3 / 1;
+}
+
+.membershipBPtime {
+    display: flex;
+    grid-area: 3 / 2 / 3 / 2;
+    align-items: center;
+}
+
+.membershipBPbutton {
+    display: flex;
+    grid-area: 3 / 3 / 3 / 3;
+    align-items: center;
+}
+
+.resultsGathering {
+    grid-area: 4 / 1 / 4 / 1;
+}
+
+.resultsGatheringtime {
+    display: flex;
+    grid-area: 4 / 2 / 4 / 2;
+    align-items: center;
+}
+
+.resultsGatheringbutton {
+    display: flex;
+    grid-area: 4 / 3 / 4 / 3;
+    align-items: center;
+}
+
+.streamLined {
+    grid-area: 5 / 1 / 5 / 1;
+}
+
+.streamlinedtime {
+    display: flex;
+    grid-area: 5 / 2 / 5 / 2;
+    align-items: center;
+}
+
+.streamlinedbutton {
+    display: flex;
+    grid-area: 5 / 3 / 5 / 3;
+    align-items: center;
+}
+
+/* display */
+button {
+    font-size: 0.8125rem;
+    background: #4EAC7F;
+    border-radius: 41px;
+    color: #FFFFFF;
+    padding: 4px 20px;
+    border: none;
+}
+
+.topline {
+    grid-area: 3 / 1 / 3 / 4;
+    border-top: 1px solid #E0E0E0;
+}
+
+.line {
+    grid-area: 3 / 1 / 3 / 4;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.linetwo {
+    grid-area: 4 / 1 / 4 / 4;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.linethree {
+    grid-area: 4 / 1 / 4 / 4;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+@media only screen and (max-width: 1200px) {
+     
+    .container {
+        display: grid;
+        position: relative; 
+        gap: 10px;
+        grid-template: repeat(10) / repeat(6);
+        background: #FFFFFF;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        width: fit-content;
+        border-radius: 10px;
+        margin: 6.125rem 19.6rem;
+        padding: 2.5rem;
+    
+    }
+}
+
+@media only screen and (max-width: 600px) {
+     html {
+        font-size: 11px;
+    }
+    .container {
+        display: grid;
+        position: relative; 
+        gap: 10px;
+        grid-template: repeat(10) / repeat(6);
+        background: #FFFFFF;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        width: fit-content;
+        border-radius: 10px;
+        margin: 6.125rem 19.6rem;
+        padding: 2.5rem;
+    
+    }
+}
